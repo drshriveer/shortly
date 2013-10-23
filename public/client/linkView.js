@@ -8,7 +8,7 @@ Shortly.LinkView = Backbone.View.extend({
         <div class="visits"><span class="count"><%= visits %></span>Visits</div> \
         <div class="title"><%= title %></div> \
         <div class="original"><%= url %></div> \
-        <a href="<%= base_url %>/<%= code %>"><%= base_url %>/<%= code %></a> \
+        <a href="<%= base_url %>/<%= code %>"><%= base_url %>/<%= code %></a> <a href="<%= base_url %>/<%= code %>/stats">(stats)</a> \
       </div>'
   ),
 

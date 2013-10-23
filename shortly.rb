@@ -82,6 +82,18 @@ get '/:url' do
     redirect link.url
 end
 
+get '/:url/stats' do
+    link = Link.find_by_code params[:url]
+    raise Sinatra::NotFound if link.nil?
+    stats = link.clicks;
+    # link.clicks.create!
+    # redirect link.url
+    p 'you have accessed the soon-to-be stat page!'
+    # p "here is the raw data: #{link.clicks}"
+    # p stats
+    stats.to_json
+end
+
 ###########################################################
 # Utility
 ###########################################################

@@ -8,10 +8,11 @@ window.Shortly = Backbone.View.extend({
         <li><a href="#" class="create">Shorten</a></li> \
       </ul> \
       </div> \
-      <div id="container_sorter"> \
+      <div class="container_sorter"> \
       <ul> \
         <li><a href="#" class="sortByLastVisited">Sort By Last Time Visited </a></li> \
         <li><a href="#" class="sortByNumberOfVisits">Sort By Number of Visits </a></li> \
+        <li><input name="filter"> </input></li> \
       </ul> \
       </div>\
       <div id="container"></div>'

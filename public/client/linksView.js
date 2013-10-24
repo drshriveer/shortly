@@ -5,7 +5,6 @@ Shortly.LinksView = Backbone.View.extend({
   initialize: function(){
     this.collection.on('sync', this.addAll, this);
     this.collection.fetch();
-    console.log(this.collection);
   },
 
   render: function() {

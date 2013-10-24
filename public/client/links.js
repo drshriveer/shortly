@@ -5,6 +5,11 @@ Shortly.Links = Backbone.Collection.extend({
 
   sortStrategy: 'lastVisitsDESC',
 
+  initialize: function(options){
+    options = options || {'sortStrategy': "visitsDESC"};
+    this.sortStrategy = options.sortStrategy;
+  },
+
   comparator: function(item){
     return this.sortStrategies[this.sortStrategy](item);
   },
